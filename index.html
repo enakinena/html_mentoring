@@ -4,27 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 7</title>
+    <title>Урок 8</title>
   </head>
   <body>
+    <blockquote>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quia.
+      </p>
+      <p>Имя автора, <cite>Источник...</cite></p>
+    </blockquote>
+    <hr />
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-      reiciendis voluptatibus ad fugit voluptate aliquid reprehenderit. Culpa
-      temporibus laboriosam fuga, tempore eaque dolorem voluptates animi fugit
-      cupiditate facere deleniti aliquam ea.
+      Серия книг <cite>Песнь льда и пламени</cite> автора Джорджа Мартина - это
+      целая серия романов.
     </p>
-    <img
-      src="images/koala.jpg"
-      alt="Пушистая коала смотрит"
-      width="250"
-      height="250"
-      loading="lazy"
-    />
-    <!-- loading="lazy" позволяет браузеру откладывать загрузку содержимого элементов -->
+
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-      molestiae facilis quisquam ipsa doloribus eveniet. Ducimus rem distinctio
-      explicabo labore?
+      Для получения более подробной информации по теме предлагаем ознакомиться с
+      оригиналом статьи на
+      <cite>
+        <a href="https://www.w3.org/">сайте W3C</a>
+      </cite>
     </p>
+    <hr />
+    <p>Если у вас возникли вопросы, поищите ответ в разделе <cite>FAQ</cite></p>
+    <hr />
+    <blockquote cite="https://some-site.com">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, natus!
+      </p>
+    </blockquote>
+    <!-- При использовании тега cite, текст будет отображаться на странице.
+    При использовании атрибута cite, визуально ничего не отобразиться. Просто увеличим семантику. -->
+    <hr />
+    <p>Как сказал бы Станиславский: <q cite="...">Не верю!</q></p>
+    <!-- Тег q - Строчный тег. Используется для выделения коротких цитат. 
+        Аналог блочного тега blockquote -->
   </body>
 </html>
