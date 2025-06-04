@@ -4,72 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 10</title>
+    <title>Урок 11</title>
   </head>
   <body>
-    <table>
-      <!-- Обязательный тег таблицы. Оборачивает все остальные табл. теги -->
-    </table>
+    <!-- action указывают адрес скрипта обработчика расположенного на стороне сервера. -->
+    <!-- method указывается метод отправки формы -->
+    <!-- <form action="/some-server-script-path" method="post"></form> -->
+    <form>
+      <fieldset>Группа полей ввода...</fieldset>
+      <fieldset>Ещё одна группу полей ввода</fieldset>
+      <fieldset>И ещё одна группа полей ввода</fieldset>
+    </form>
+    <!-- fieldset служит для визуальной группировки нескольких полей ввода в один набор -->
+    <br />
     <hr />
-    <tr>
-      <!-- Используется для выделения строк в таблице. Является обязательным.  -->
-    </tr>
+    <form>
+      <fieldset>
+        <legend>Паспортные данные</legend>
+        ...
+      </fieldset>
+      <fieldset>
+        <legend>Работа</legend>
+        ...
+      </fieldset>
+      <fieldset>
+        <legend>Образование</legend>
+        ...
+      </fieldset>
+      <!-- legend - используется в качестве заголовка внутри тега fieldset -->
+    </form>
     <hr />
-    <td>
-      <!-- Используется в качестве обычной ячейки в таблице. -->
-    </td>
+    <label for="">Логин:</label>
+    <!-- label - тег метки к любому интерактивному полю вводу. -->
+    <input type="text" />
+    <!-- input - тег для пользовательского взаимодействия(ввод данных) -->
+    <br />
     <hr />
-    <table border="1">
-      <tr>
-        <th>Имя</th>
-        <th>Номер заявки</th>
-      </tr>
-      <tr>
-        <td>Алексей</td>
-        <td>101</td>
-      </tr>
-      <tr>
-        <td>Александр</td>
-        <td>102</td>
-      </tr>
-      <tr>
-        <td>Михаил</td>
-        <td>103</td>
-      </tr>
-    </table>
-    <hr />
-    <table border="1">
-      <!-- тег caption указывает общий заголовок таблицы -->
-      <caption>
-        Рассчётный лист услуг ЖКХ
-      </caption>
-      <thead>
-        <tr>
-          <th rowspan="2">Вид услуги</th>
-          <th rowspan="2">Ед. изм.</th>
-          <th colspan="2">Объём коммунальный услуг</th>
-          <th rowspan="2">Размер платы</th>
-        </tr>
-        <tr>
-          <th>на индивид. нужды</th>
-          <th>на общедом. нужды</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Холодная вода</td>
-          <td>Куб м.</td>
-          <td>3</td>
-          <td>7</td>
-          <td>1000.00</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Итого к оплате за расчётный период</td>
-          <td colspan="4">9999.00</td>
-        </tr>
-      </tfoot>
-    </table>
+    <label for="login">Логин:</label>
+    <input id="login" name="user-login" type="text" />
+
+    <label for="review">Ваш отзыв:</label>
+    <input id="review" name="user-review" value="Отлично" />
   </body>
 </html>
