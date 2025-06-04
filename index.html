@@ -4,41 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 8</title>
+    <title>Урок 9</title>
   </head>
   <body>
-    <blockquote>
+    <video src="video/example.mp4" controls></video>
+    <hr />
+    <video>
+      <source src="video/example.mp4" type="video/mp4" />
+      <source src="video/example.webm" type="video/webm" />
+      <p>К сожалению, ваш браузер не поддерживает видео</p>
+    </video>
+    <hr />
+    <video src="video/example.mp4" controls width="480" height="270"></video>
+    <hr />
+    <video
+      src="video/example.mp4"
+      width="240"
+      height="150"
+      autoplay
+      muted
+    ></video>
+    <hr />
+    <video src="video/example.mp4" controls loop></video>
+    <hr />
+    <video
+      src="video/example.mp4"
+      controls
+      poster="./images/video-placeholder.jpg"
+    ></video>
+    <hr />
+    <audio controls>
+      <source src="./audio/example.mp3" type="audio/mpeg" />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quia.
+        Ваш браузер не поддерживает встроенное аудио. Попробуйте
+        <a href="./audio/example.mp3" download>скачать</a> файл.
       </p>
-      <p>Имя автора, <cite>Источник...</cite></p>
-    </blockquote>
+    </audio>
     <hr />
-    <p>
-      Серия книг <cite>Песнь льда и пламени</cite> автора Джорджа Мартина - это
-      целая серия романов.
-    </p>
-
-    <p>
-      Для получения более подробной информации по теме предлагаем ознакомиться с
-      оригиналом статьи на
-      <cite>
-        <a href="https://www.w3.org/">сайте W3C</a>
-      </cite>
-    </p>
+    <!-- Тег iframe позволяет вывести на страницу сайт виджет с каким-то функционалом. -->
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae5a2cb1c3faa177fb3b47868c041cc6765319c8dc1a6a6ea8bd936af7c6fb768&amp;source=constructor"
+      width="500"
+      height="400"
+      frameborder="0"
+    ></iframe>
     <hr />
-    <p>Если у вас возникли вопросы, поищите ответ в разделе <cite>FAQ</cite></p>
-    <hr />
-    <blockquote cite="https://some-site.com">
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, natus!
-      </p>
-    </blockquote>
-    <!-- При использовании тега cite, текст будет отображаться на странице.
-    При использовании атрибута cite, визуально ничего не отобразиться. Просто увеличим семантику. -->
-    <hr />
-    <p>Как сказал бы Станиславский: <q cite="...">Не верю!</q></p>
-    <!-- Тег q - Строчный тег. Используется для выделения коротких цитат. 
-        Аналог блочного тега blockquote -->
+    <!-- Встраивание фрейма другого сайта на свой сайт -->
+    <iframe src="https://aleksanderlamkov.ru" width="500" height="400"></iframe>
   </body>
 </html>
