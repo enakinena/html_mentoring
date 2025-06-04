@@ -4,52 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 9</title>
+    <title>Урок 10</title>
   </head>
   <body>
-    <video src="video/example.mp4" controls></video>
+    <table>
+      <!-- Обязательный тег таблицы. Оборачивает все остальные табл. теги -->
+    </table>
     <hr />
-    <video>
-      <source src="video/example.mp4" type="video/mp4" />
-      <source src="video/example.webm" type="video/webm" />
-      <p>К сожалению, ваш браузер не поддерживает видео</p>
-    </video>
+    <tr>
+      <!-- Используется для выделения строк в таблице. Является обязательным.  -->
+    </tr>
     <hr />
-    <video src="video/example.mp4" controls width="480" height="270"></video>
+    <td>
+      <!-- Используется в качестве обычной ячейки в таблице. -->
+    </td>
     <hr />
-    <video
-      src="video/example.mp4"
-      width="240"
-      height="150"
-      autoplay
-      muted
-    ></video>
+    <table border="1">
+      <tr>
+        <th>Имя</th>
+        <th>Номер заявки</th>
+      </tr>
+      <tr>
+        <td>Алексей</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>Александр</td>
+        <td>102</td>
+      </tr>
+      <tr>
+        <td>Михаил</td>
+        <td>103</td>
+      </tr>
+    </table>
     <hr />
-    <video src="video/example.mp4" controls loop></video>
-    <hr />
-    <video
-      src="video/example.mp4"
-      controls
-      poster="./images/video-placeholder.jpg"
-    ></video>
-    <hr />
-    <audio controls>
-      <source src="./audio/example.mp3" type="audio/mpeg" />
-      <p>
-        Ваш браузер не поддерживает встроенное аудио. Попробуйте
-        <a href="./audio/example.mp3" download>скачать</a> файл.
-      </p>
-    </audio>
-    <hr />
-    <!-- Тег iframe позволяет вывести на страницу сайт виджет с каким-то функционалом. -->
-    <iframe
-      src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae5a2cb1c3faa177fb3b47868c041cc6765319c8dc1a6a6ea8bd936af7c6fb768&amp;source=constructor"
-      width="500"
-      height="400"
-      frameborder="0"
-    ></iframe>
-    <hr />
-    <!-- Встраивание фрейма другого сайта на свой сайт -->
-    <iframe src="https://aleksanderlamkov.ru" width="500" height="400"></iframe>
+    <table border="1">
+      <!-- тег caption указывает общий заголовок таблицы -->
+      <caption>
+        Рассчётный лист услуг ЖКХ
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Вид услуги</th>
+          <th rowspan="2">Ед. изм.</th>
+          <th colspan="2">Объём коммунальный услуг</th>
+          <th rowspan="2">Размер платы</th>
+        </tr>
+        <tr>
+          <th>на индивид. нужды</th>
+          <th>на общедом. нужды</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Холодная вода</td>
+          <td>Куб м.</td>
+          <td>3</td>
+          <td>7</td>
+          <td>1000.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Итого к оплате за расчётный период</td>
+          <td colspan="4">9999.00</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
