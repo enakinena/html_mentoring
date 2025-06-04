@@ -4,46 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 11</title>
+    <title>Урок 12</title>
   </head>
   <body>
-    <!-- action указывают адрес скрипта обработчика расположенного на стороне сервера. -->
-    <!-- method указывается метод отправки формы -->
-    <!-- <form action="/some-server-script-path" method="post"></form> -->
     <form>
-      <fieldset>Группа полей ввода...</fieldset>
-      <fieldset>Ещё одна группу полей ввода</fieldset>
-      <fieldset>И ещё одна группа полей ввода</fieldset>
+      <p>
+        <label for="email">Электронная почта:</label>
+        <input id="email" name="user-email" type="email" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
     </form>
-    <!-- fieldset служит для визуальной группировки нескольких полей ввода в один набор -->
     <br />
     <hr />
     <form>
-      <fieldset>
-        <legend>Паспортные данные</legend>
-        ...
-      </fieldset>
-      <fieldset>
-        <legend>Работа</legend>
-        ...
-      </fieldset>
-      <fieldset>
-        <legend>Образование</legend>
-        ...
-      </fieldset>
-      <!-- legend - используется в качестве заголовка внутри тега fieldset -->
+      <p>
+        <label for="user-profile">Ссылка на профиль в любой соц. сети:</label>
+        <input id="user-profile" name="user-profile" type="url" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
     </form>
-    <hr />
-    <label for="">Логин:</label>
-    <!-- label - тег метки к любому интерактивному полю вводу. -->
-    <input type="text" />
-    <!-- input - тег для пользовательского взаимодействия(ввод данных) -->
     <br />
     <hr />
-    <label for="login">Логин:</label>
-    <input id="login" name="user-login" type="text" />
-
-    <label for="review">Ваш отзыв:</label>
-    <input id="review" name="user-review" value="Отлично" />
+    <form>
+      <p>
+        <label for="user-phone">Номер телефона:</label>
+        <input id="user-phone" name="user-phone" type="tel" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <form>
+      <p>
+        <label for="search-query">Введите поисковый запрос:</label>
+        <input id="search-query" name="search-query" type="search" />
+      </p>
+      <p>
+        <button type="submit">Поиск</button>
+      </p>
+    </form>
+    <br />
+    <br />
+    <hr />
+    <form>
+      <p>
+        <label for="user-age">Ваш возраст:</label>
+        <input id="user-age" name="user-age" type="number" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <hr />
+    <br />
+    <form>
+      <p>
+        <label for="user-password">Ваш пароль:</label>
+        <input id="user-password" name="user-password" type="password" />
+      </p>
+      <p>
+        <button type="submit">Войти</button>
+      </p>
+    </form>
+    <br />
+    <hr />
+    <form>
+      <p>
+        <label for="fulldate">Введите дату в формате: день, месяц, год.</label>
+        <input id="fulldate" name="fulldate" type="date" />
+      </p>
+    </form>
+    <hr />
+    <form>
+      <p>
+        <label for="prefer-color">Выберите предпочтительный цвет</label>
+        <input id="prefer-color" name="prefer-color" type="color" />
+      </p>
+    </form>
   </body>
 </html>
