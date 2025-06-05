@@ -85,5 +85,66 @@
         <input id="prefer-color" name="prefer-color" type="color" />
       </p>
     </form>
+    <form>
+      <p>
+        <label for="user-document">Прикрепите ваш документ:</label>
+        <input id="user-document" name="user-document" type="file" />
+      </p>
+
+      <p>
+        <label for="user-documents">Прикрепите ваши документы:</label>
+        <input id="user-documents" name="user-documents" type="file" multiple />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <br />
+    <hr />
+    <form>
+      <p>
+        <input
+          type="checkbox"
+          id="agreement"
+          name="agreement"
+          value="agreement"
+        />
+        <label for="agreement">Я согласен со всеми условиями</label>
+      </p>
+
+      <p>
+        <input
+          type="checkbox"
+          id="agreement-total"
+          name="agreement-total"
+          value="agreement-total"
+          checked
+        />
+        <label for="agreement-total">Я точно согласен со всеми условиями</label>
+      </p>
+    </form>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>Ваш пол</legend>
+        <p>
+          <input type="radio" id="male" name="gender" value="male" checked />
+          <label for="male">Муж.</label>
+        </p>
+        <p>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Жен.</label>
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <label for="sound-volume"> Громкость звука (от 2 до 100) </label>
+    <input
+      type="range"
+      name="sound-volume"
+      id="sound-volume"
+      min="2"
+      max="100"
+    />
   </body>
 </html>
