@@ -4,147 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 12</title>
+    <title>Урок 13</title>
   </head>
   <body>
-    <form>
-      <p>
-        <label for="email">Электронная почта:</label>
-        <input id="email" name="user-email" type="email" />
-      </p>
-      <p>
-        <button type="submit">Отправить</button>
-      </p>
-    </form>
+    <label for="comment">Ваш комментарий:</label>
+    <textarea name="user-comment" id="comment">
+Статья - топ! Автор, пиши ещё.</textarea
+    >
     <br />
     <hr />
-    <form>
-      <p>
-        <label for="user-profile">Ссылка на профиль в любой соц. сети:</label>
-        <input id="user-profile" name="user-profile" type="url" />
-      </p>
-      <p>
-        <button type="submit">Отправить</button>
-      </p>
-    </form>
-    <br />
-    <hr />
-    <form>
-      <p>
-        <label for="user-phone">Номер телефона:</label>
-        <input id="user-phone" name="user-phone" type="tel" />
-      </p>
-      <p>
-        <button type="submit">Отправить</button>
-      </p>
-    </form>
-    <form>
-      <p>
-        <label for="search-query">Введите поисковый запрос:</label>
-        <input id="search-query" name="search-query" type="search" />
-      </p>
-      <p>
-        <button type="submit">Поиск</button>
-      </p>
-    </form>
-    <br />
-    <br />
-    <hr />
-    <form>
-      <p>
-        <label for="user-age">Ваш возраст:</label>
-        <input id="user-age" name="user-age" type="number" />
-      </p>
-      <p>
-        <button type="submit">Отправить</button>
-      </p>
-    </form>
-    <hr />
-    <br />
-    <form>
-      <p>
-        <label for="user-password">Ваш пароль:</label>
-        <input id="user-password" name="user-password" type="password" />
-      </p>
-      <p>
-        <button type="submit">Войти</button>
-      </p>
-    </form>
-    <br />
-    <hr />
-    <form>
-      <p>
-        <label for="fulldate">Введите дату в формате: день, месяц, год.</label>
-        <input id="fulldate" name="fulldate" type="date" />
-      </p>
-    </form>
-    <hr />
-    <form>
-      <p>
-        <label for="prefer-color">Выберите предпочтительный цвет</label>
-        <input id="prefer-color" name="prefer-color" type="color" />
-      </p>
-    </form>
-    <form>
-      <p>
-        <label for="user-document">Прикрепите ваш документ:</label>
-        <input id="user-document" name="user-document" type="file" />
-      </p>
-
-      <p>
-        <label for="user-documents">Прикрепите ваши документы:</label>
-        <input id="user-documents" name="user-documents" type="file" multiple />
-      </p>
-      <p>
-        <button type="submit">Отправить</button>
-      </p>
-    </form>
-    <br />
-    <hr />
-    <form>
-      <p>
-        <input
-          type="checkbox"
-          id="agreement"
-          name="agreement"
-          value="agreement"
-        />
-        <label for="agreement">Я согласен со всеми условиями</label>
-      </p>
-
-      <p>
-        <input
-          type="checkbox"
-          id="agreement-total"
-          name="agreement-total"
-          value="agreement-total"
-          checked
-        />
-        <label for="agreement-total">Я точно согласен со всеми условиями</label>
-      </p>
-    </form>
-    <hr />
-    <form>
-      <fieldset>
-        <legend>Ваш пол</legend>
-        <p>
-          <input type="radio" id="male" name="gender" value="male" checked />
-          <label for="male">Муж.</label>
-        </p>
-        <p>
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Жен.</label>
-        </p>
-      </fieldset>
-    </form>
-    <hr />
-    <label for="sound-volume"> Громкость звука (от 2 до 100) </label>
-    <input
-      type="range"
-      name="sound-volume"
-      id="sound-volume"
-      min="2"
-      max="100"
-    />
+    <label for="city">Ваш город:</label>
+    <select name="user-city" id="city" multiple>
+      <option value="moscow">Москва</option>
+      <option value="petersburg">Санкт-Петербург</option>
+      <option value="voronezh">Воронеж</option>
+    </select>
+    <!-- multiple - атрибут добавляют чтобы выбирать более 1-го варианта -->
   </body>
+  <hr />
+  <br />
+  <form action="">
+    <label for="city">Ваш город:</label>
+    <select name="user-city" id="city" required>
+      <option disabled value="" selected>Не выбрано</option>
+      <option value="moscow">Москва</option>
+      <option value="petersburg">Санкт-Петербург</option>
+      <option value="voronezh">Воронеж</option>
+    </select>
+    <button>Send</button>
+  </form>
+  <br />
+  <br />
+  <hr />
+  <label for="office">Выберите офис:</label>
+  <select name="office" id="office">
+    <optgroup label="Центральный район">
+      <option value="center-1">ул. Пушкина, д. 2</option>
+      <option value="center-2">ул. Ломоносова, д. 15</option>
+      <option value="center-3">бул. Победы, д. 3, к.6</option>
+    </optgroup>
+    <optgroup label="Южный район">
+      <option value="south-1">ул. Лама, д. 5</option>
+      <option value="south-2">пр. Революции, д. 4</option>
+    </optgroup>
+  </select>
 </html>
