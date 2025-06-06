@@ -249,4 +249,27 @@
     </p>
     <p><button type="submit">Отправить</button></p>
   </form>
+  <br />
+  <hr />
+  <h1>Регистрация</h1>
+  <!-- pattern - регулярка которая разрешает только латиницу -->
+  <form>
+    <p>
+      <label for="username">Имя пользователя:</label>
+      <input id="username" name="username" pattern="[a-zA-Z]+" />
+    </p>
+    <p>
+      <button type="submit">Отправить</button>
+    </p>
+  </form>
+  <br />
+  <hr />
+  <p>
+    <label for="message-1">Сообщение-1</label>
+    <textarea name="message-1" id="message-1" spellcheck="true"> </textarea>
+  </p>
+  <p>
+    <label for="message-2">Сообщение-2</label>
+    <textarea name="message-2" id="message-2" spellcheck="false"> </textarea>
+  </p>
 </html>
