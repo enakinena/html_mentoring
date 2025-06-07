@@ -4,276 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 14</title>
+    <title>Урок 15</title>
   </head>
   <body>
-    <form>
-      <p>
-        <label for="login">Логин:</label>
-        <input type="text" id="login" name="user-login" required />
-      </p>
-      <p>
-        <input
-          type="checkbox"
-          id="agreement"
-          name="agreement"
-          value="agreement"
-          required
-        />
-        <label for="agreement">Я согласен со всеми условиями</label>
-      </p>
-      <p>
-        <label for="message">Ваше сообщение:</label>
-        <textarea name="user-message" id="message" required></textarea>
-      </p>
-      <p>
-        <label for="city">Ваш город:</label>
-        <select name="user-city" id="city" required>
-          <option value="" disabled selected>Не выбрано</option>
-          <option value="moscow">Москва</option>
-          <option value="voronezh">Воронеж</option>
-        </select>
-      </p>
-      <button type="submit">Send</button>
-    </form>
-    <br />
-    <hr />
-    <form>
-      <p>
-        <label for="login">Логин:</label>
-        <input name="user-login" id="login" disabled />
-      </p>
-      <p>
-        <input
-          type="checkbox"
-          name="agreement"
-          id="agreement"
-          value="agreement"
-          disabled
-        />
-        <label for="agreement">Я согласен со всеми условиями</label>
-      </p>
-      <p>
-        <label for="message">Ваше сообщение:</label>
-        <textarea name="user-message" id="message" disabled></textarea>
-      </p>
-      <p>
-        <label for="city">Ваш город:</label>
-        <select name="user-city" id="city" disabled>
-          <option></option>
-          <option value="moscow">Москва</option>
-          <option value="voronezh">Воронеж</option>
-        </select>
-      </p>
-      <p>
-        <label for="district">Ваш район:</label>
-        <select name="user-district" id="district">
-          <option value="center">Центральный</option>
-          <option value="north" disabled>Северный</option>
-          <option value="south">Южный</option>
-        </select>
-      </p>
-      <p>
-        <label for="street">Ваша улица:</label>
-        <select name="user-street" id="street">
-          <optgroup label="Центральный район">
-            <option value="street-0">Улица 0</option>
-          </optgroup>
-          <optgroup label="Северный район">
-            <option value="street-1">Улица 1</option>
-            <option value="street-2">Улица 2</option>
-          </optgroup>
-          <optgroup label="Южный район">
-            <option value="street-3">Улица 3</option>
-          </optgroup>
-        </select>
-      </p>
-      <fieldset disabled>
-        <p>
-          <label for="request-number">Номер обращения:</label>
-          <input name="user-request-number" id="request-number" />
-        </p>
-        <p>
-          <label for="email">Ваш email:</label>
-          <input id="email" name="user-email" value="aleksander12@m.com" />
-        </p>
-      </fieldset>
-      <button type="submit" disabled>Send</button>
-    </form>
-    <form>
-      <p>
-        <label for="request-number">Ваш номер обращения:</label>
-        <input
-          id="request-number"
-          name="user-request-number"
-          value="123123123"
-          readonly
-        />
-      </p>
-      <br />
-      <hr />
-      <p>
-        <label for="name">Имя:</label>
-        <input id="name" name="user-name" placeholder="Введите ваше имя" />
-      </p>
-      <p>
-        <label for="review">Отзыв:</label>
-        <textarea
-          name="user-review"
-          id="review"
-          placeholder="Введите ваш отзыв"
-        ></textarea>
-      </p>
-    </form>
-    <hr />
-    <p>
-      <label for="field-1">Стандартная экранная клавиатура:</label>
-      <input name="field-1" id="field-1" inputmode="text" />
-    </p>
-    <p>
-      <label for="field-2">Экранная клавиатура не появится вовсе:</label>
-      <input name="field-2" id="field-2" inputmode="none" />
-    </p>
-    <p>
-      <label for="field-3">Экранная клавиатура с цифрами:</label>
-      <input name="field-3" id="field-3" inputmode="numeric" />
-    </p>
-    <p>
-      <label for="field-4">Экранная клавиатура с цифрами и разделителем:</label>
-      <input name="field-4" id="field-4" inputmode="decimal" />
-    </p>
-    <p>
-      <label for="field-5"
-        >Экранная клавиатура для удобного ввода номера тел:</label
-      >
-      <input name="field-5" id="field-5" inputmode="tel" />
-    </p>
-    <p>
-      <label for="field-6">Экранная клавиатура для удобного ввода email:</label>
-      <input name="field-6" id="field-6" inputmode="email" />
-    </p>
-    <p>
-      <label for="field-7">Экранная клавиатура с кнопкой поиска:</label>
-      <input name="field-7" id="field-7" inputmode="search" />
-    </p>
-    <p>
-      <label for="field-8">Экранная клавиатура для удобного ввода url:</label>
-      <input name="field-8" id="field-8" inputmode="url" />
-    </p>
-    <br />
-    <hr />
-    <br />
-    <!-- Экранная клавиатура будет с цифрами, но возможна вставка в поле любых не-цифровых значений -->
-    <p>
-      <label for="passport-number-1">Номер паспорта (только цифры)</label>
-      <input
-        id="passport-number-1"
-        name="user-passport-number-1"
-        inputmode="numeric"
-      />
-    </p>
-    <!-- Экранная клавиатура будет с цифрами, и вставка в поле любых не-цифровых значений будет невозможна -->
-    <p>
-      <label for="passport-number-2">Номер паспорта (только цифры)</label>
-      <input
-        id="passport-number-2"
-        name="user-passport-number-2"
-        type="number"
-      />
-    </p>
-    <br />
-    <p>
-      <label for="name-1">Ваше имя:</label>
-      <input id="name-1" name="name" />
-    </p>
-    <p>
-      <label for="name-2">Ваше имя:</label>
-      <input id="name-2" name="name" autocomplete="on" />
-    </p>
-    <p>
-      <label for="name-3">Ваше имя:</label>
-      <input id="name-3" name="name" autocomplete="off" />
-    </p>
-    <!-- autofocus - при загрузке страницы говорит что нужно взять любой элемент в фокус. Применяется к любому интерактивному элементу.-->
-    <button>Button 1</button>
-    <button autofocus>Button 2</button>
-    <br />
-    <br />
-    <br />
-    <hr />
-    <input />
-    <textarea></textarea>
-    <button onclick="alert('Хватит на меня нажимать')">Нажми на меня</button>
+    <!-- header (-используется для выделения верхней части страницы, секции или любого другого блока. Как минимум подобный тег используется для так называемой шапки,
+        присутствующей на всех страницах интернета. В шапке сайта обычно распологаетсая логотип компании, меню навигации, кнопки поиска итд.) -->
+    <!-- main - (используется для выделения основной части страницы. Распологается между шапкой и подвалом.) -->
+    <!-- section (используется для выделения независимых функциональных блоков.
+        обычно крупных секционных) -->
+    <!-- шапка страницы -->
+    <!-- article (используется для выделения самодостаточного блока какой-то сущности. Карточка товара, рекламный баннер, карточка новости, итд) -->
+    <!-- aside (предназначен для выделения блока с дополнительным косвенным содержимым) -->
+    <!-- nav - предназначен для выделения блоков навигации. На странице таких тегов может быть больше чем 1. -->
+    <header>
+      <div>Лого</div>
+      <!-- меню навигации -->
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Главная</a>
+          </li>
+          <li>
+            <a href="/">Каталог</a>
+          </li>
+          <li>
+            <a href="/">О нас</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div>Кнопка входа</div>
+    </header>
+
+    <!-- основная часть страницы -->
+    <main>
+      <!-- первая секция -->
+      <!-- шапка первой секции -->
+      <header>
+        <h2>Каталог товаров</h2>
+      </header>
+
+      <!-- первая карточка товара -->
+      <article>
+        <!-- шапка блока карточки товара -->
+        <div>
+          <h3>Название товара 1</h3>
+          <div>Название категории товара</div>
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nam.
+        </div>
+      </article>
+      <section>
+        <!-- вторая карточка товара -->
+        <!-- шапка блока карточки товара -->
+        <article>
+          <header>
+            <h3>Название товара 2</h3>
+            <div>Категория товара</div>
+          </header>
+        </article>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+          voluptates aliquid ducimus?
+        </div>
+      </section>
+      <!-- вторая секция -->
+      <section>
+        <!-- шапка второй секции -->
+        <header>
+          <h2>Новости</h2>
+        </header>
+
+        <!-- карточка новостей -->
+        <article>Карточка новости 1</article>
+        <article>Карточка новости 2</article>
+        <article>Карточка новости 3</article>
+      </section>
+
+      <!-- третья секция -->
+      <div>
+        <!-- шапка третьей секции -->
+        <header>
+          <h2>Контакты</h2>
+        </header>
+        <div>
+          г. Москва, Ленинградский проспект, д. 39, стр. 79 г. Москва,
+          Ленинградский проспект, д. 39, стр. 79 г. Москва, Ленинградский
+          проспект, д. 39, стр. 79 г. Москва, Ленинградский проспект, д. 39,
+          стр. 79
+        </div>
+      </div>
+
+      <!-- боковая часть страницы -->
+      <aside>Фильтры</aside>
+    </main>
+
+    <!-- нижняя часть страницы -->
+    <footer>копирайт, доп. ссылки, доп. навигация итд</footer>
   </body>
-  <br />
-  <br />
-  <br />
-  <p>
-    <!-- Поле вне формы -->
-    <label for="email">Ваш email:</label>
-    <input id="email" name="email" type="email" form="user-info" />
-  </p>
-
-  <form id="user-info">
-    <p>
-      <label for="name">Ваше имя:</label>
-      <input type="name" name="name" id="name" />
-    </p>
-
-    <p>
-      <button type="submit">Отправить</button>
-    </p>
-  </form>
-  <br />
-  <br />
-  <h1>Регистрация</h1>
-  <form>
-    <p>
-      <label for="password">Пароль (от 6 до 12 символов):</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        minlength="6"
-        maxlength="12"
-      />
-    </p>
-    <p>
-      <label for="message">Сообщение:</label>
-      <textarea
-        name="message"
-        id="message"
-        minlength="10"
-        maxlength="50"
-      ></textarea>
-    </p>
-    <p><button type="submit">Отправить</button></p>
-  </form>
-  <br />
-  <hr />
-  <h1>Регистрация</h1>
-  <!-- pattern - регулярка которая разрешает только латиницу -->
-  <form>
-    <p>
-      <label for="username">Имя пользователя:</label>
-      <input id="username" name="username" pattern="[a-zA-Z]+" />
-    </p>
-    <p>
-      <button type="submit">Отправить</button>
-    </p>
-  </form>
-  <br />
-  <hr />
-  <p>
-    <label for="message-1">Сообщение-1</label>
-    <textarea name="message-1" id="message-1" spellcheck="true"> </textarea>
-  </p>
-  <p>
-    <label for="message-2">Сообщение-2</label>
-    <textarea name="message-2" id="message-2" spellcheck="false"> </textarea>
-  </p>
-  <br />
-  <br />
-  <label for="message">Сообщение:</label>
-  <textarea name="message" id="message" cols="5" rows="5"></textarea>
 </html>
