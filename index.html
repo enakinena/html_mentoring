@@ -4,79 +4,157 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 17</title>
+    <title>Tsk_html</title>
   </head>
   <body>
-    <!-- class - его можно добавить к любому тегу. Могут быть использованы в css и js
-    в качестве так называемых селекторов. Позволяют получить доступ к конкрутному элементу, и как-то на него повлиять -->
-    <!-- id - задаёт элементу идентификатор который должен быть уникальным в рамках одной страницы. Не может содержать пробелы и начинаться с цифры -->
-    <h1 class="page-title">Главная</h1>
-
-    <section class="banner">
-      <h2 class="banner-title section-title">Заголовок баннера</h2>
-      <div class="banned-description">Описание баннера</div>
+    <header>
+      <h1>Закрепление навыков HTML</h1>
+    </header>
+    <main>
+      <p>
+        Выполняю задание по HTML, чтобы перейти дальше к CSS! <br />
+        Уже не терпится
+      </p>
+    </main>
+    <section>
+      <ol>
+        <li>Урок 1</li>
+        <li>Урок 2</li>
+        <li>Урок 3</li>
+        <li>Урок 4</li>
+        <li>Урок 5</li>
+        <li>Урок 6</li>
+        <li>Урок 7</li>
+        <li>Урок 8</li>
+        <li>Урок 9</li>
+        <li>Урок 10</li>
+        <li>Урок 11</li>
+        <li>Урок 12</li>
+        <li>Урок 13</li>
+        <li>Урок 14</li>
+        <li>Урок 15</li>
+        <li>Урок 16</li>
+        <li>Урок 17</li>
+        <li>Урок 18</li>
+      </ol>
     </section>
+    <table border="1px solid black" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Сотрудник</th>
+          <th>Зарплата</th>
+          <th>Бонусы</th>
+          <th>Менеджер</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Алексей Примадонин</td>
+          <td>750$</td>
+          <td>63$</td>
+          <td rowspan="2">Кодовёнок Хекслетович</td>
+        </tr>
+        <tr>
+          <td>Вениамин Редакторович</td>
+          <td>1200$</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Джедай Падаванов</td>
+          <td>500$</td>
+          <td>100$</td>
+          <td>Королева Верстальщина</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">Всего: 2613$</td>
+        </tr>
+      </tfoot>
+    </table>
     <br />
-    <hr />
-    <p id="paragraph-1">Параграф 1</p>
-    <p id="paragraph-2">Параграф 1</p>
-    <p id="paragraph-3">Параграф 1</p>
-    <hr />
-    <br />
+    <section>
+      <form>
+        <label for="name">Имя:</label><br /><br />
+        <input
+          id="name"
+          type="text"
+          name="user-name"
+          placeholder="Введите ваше имя"
+          required
+        />
+        <br /><br />
+        <label for="surname">Фамилия:</label><br /><br />
+        <input
+          id="surname"
+          type="text"
+          name="user-surname"
+          placeholder="Введите вашу фамилию"
+          required
+        />
+        <br /><br />
+        <label for="password">Пароль:</label><br /><br />
+        <input
+          id="password"
+          type="password"
+          name="user-password"
+          placeholder="Введите пароль"
+          required
+        />
+        <br /><br />
+        <label for="tel">Телефон:</label><br /><br />
+        <input
+          id="telephone"
+          type="tel"
+          name="user-tel"
+          placeholder="Введите телефон"
+        />
+        <br /><br />
+        <label for="gender"><b>Пол</b>:</label><br />
+        <input type="radio" name="user-male" id="male" value="male" required />
+        <label for="male">Мужской</label><br />
+        <input type="radio" name="user-female" id="female" value="female" />
+        <label for="female">Женский</label><br />
+        <br />
 
-    <a href="#contacts">Наши контакты</a>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    <h1 id="contacts">Контакты</h1>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <br />
-    <hr />
-    <p>
-      <label for="user-name">Имя:</label>
-      <input id="user-name" />
-    </p>
-    <p>
-      <label for="user-message">Сообщение:</label>
-      <textarea id="user-message"></textarea>
-    </p>
-
-    <p>
-      <label for="user-city">Город:</label>
-      <select id="user-city">
-        <option value="msk">Москва</option>
-        <option value="spb">Санкт-Петербург</option>
-        <option value="vrn">Воронеж</option>
-      </select>
-    </p>
-    <hr />
-    <p>Параграф 1</p>
-    <p hidden>Параграф 2</p>
-    <p>Параграф 3</p>
-    <br />
-    <hr />
-    <button>Кнопка 1</button>
-    <button>Кнопка 2</button>
-    <button>Кнопка 3</button>
-    <p tabindex="1">Параграф 1</p>
-    <p tabindex="3">Параграф 2</p>
-    <p tabindex="2">Параграф 3</p>
-    <hr />
-    <hr />
-    <br />
-    <!-- tabindex="0" - браузер самостоятельно определяет порядок фокусировки-->
-    <button>Кнопка 4</button>
-    <button>Кнопка 5</button>
-    <button>Кнопка 6</button>
-    <p tabindex="0">Параграф 4</p>
-    <p tabindex="0">Параграф 5</p>
-    <p tabindex="0">Параграф 6</p>
+        <label for="property"><b>Имущество</b>:</label><br />
+        <input
+          type="checkbox"
+          id="bicycle"
+          name="bicycle"
+          value="bicycle"
+          required
+        />
+        <label for="bicycle">Велик</label><br />
+        <input type="checkbox" id="car" name="car" value="car" />
+        <label for="car">Машина</label><br />
+        <input type="checkbox" id="house" name="house" value="house" disabled />
+        <label for="house">Дом</label>
+        <br /><br />
+        <label for="">Дополнительная информация:</label><br /><br />
+        <textarea
+          name="information"
+          id="information"
+          cols="30"
+          rows="4"
+        ></textarea>
+        <br /><br />
+        <label for="upload-photo">Прикрепить фото:</label><br /><br />
+        <input type="file" />
+        <br /><br />
+        <label for="color">Любимый цвет:</label><br /><br />
+        <input type="color" id="color" /><br /><br />
+        <label for="salary">Хочу ЗП:</label><br /><br />
+        <select name="user-salary" id="salary">
+          <option value="100">100к</option>
+          <option value="150">150к</option>
+          <option value="200">200к</option></select
+        ><br /><br />
+        <img src="/html_mentoring/photo/hqdefault.jpg" alt="" width="150px" />
+        <br /><br />
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+      </form>
+    </section>
   </body>
 </html>
