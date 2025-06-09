@@ -4,9 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 16</title>
+    <title>Урок 17</title>
   </head>
   <body>
-    <p>Тему svg нужно будет пройти позже. Не простая тема</p>
+    <!-- class - его можно добавить к любому тегу. Могут быть использованы в css и js
+    в качестве так называемых селекторов. Позволяют получить доступ к конкрутному элементу, и как-то на него повлиять -->
+    <!-- id - задаёт элементу идентификатор который должен быть уникальным в рамках одной страницы. Не может содержать пробелы и начинаться с цифры -->
+    <h1 class="page-title">Главная</h1>
+
+    <section class="banner">
+      <h2 class="banner-title section-title">Заголовок баннера</h2>
+      <div class="banned-description">Описание баннера</div>
+    </section>
+    <br />
+    <hr />
+    <p id="paragraph-1">Параграф 1</p>
+    <p id="paragraph-2">Параграф 1</p>
+    <p id="paragraph-3">Параграф 1</p>
+    <hr />
+    <br />
+
+    <a href="#contacts">Наши контакты</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <h1 id="contacts">Контакты</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <br />
+    <hr />
+    <p>
+      <label for="user-name">Имя:</label>
+      <input id="user-name" />
+    </p>
+    <p>
+      <label for="user-message">Сообщение:</label>
+      <textarea id="user-message"></textarea>
+    </p>
+
+    <p>
+      <label for="user-city">Город:</label>
+      <select id="user-city">
+        <option value="msk">Москва</option>
+        <option value="spb">Санкт-Петербург</option>
+        <option value="vrn">Воронеж</option>
+      </select>
+    </p>
+    <hr />
+    <p>Параграф 1</p>
+    <p hidden>Параграф 2</p>
+    <p>Параграф 3</p>
+    <br />
+    <hr />
+    <button>Кнопка 1</button>
+    <button>Кнопка 2</button>
+    <button>Кнопка 3</button>
+    <p tabindex="1">Параграф 1</p>
+    <p tabindex="3">Параграф 2</p>
+    <p tabindex="2">Параграф 3</p>
+    <hr />
+    <hr />
+    <br />
+    <!-- tabindex="0" - браузер самостоятельно определяет порядок фокусировки-->
+    <button>Кнопка 4</button>
+    <button>Кнопка 5</button>
+    <button>Кнопка 6</button>
+    <p tabindex="0">Параграф 4</p>
+    <p tabindex="0">Параграф 5</p>
+    <p tabindex="0">Параграф 6</p>
   </body>
 </html>
