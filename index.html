@@ -7,16 +7,16 @@
     <title>Tsk_html</title>
   </head>
   <body>
-    <header>
-      <h1>Закрепление навыков HTML</h1>
-    </header>
+    <header></header>
     <main>
+      <h1>Закрепление навыков HTML</h1>
       <p>
         Выполняю задание по HTML, чтобы перейти дальше к CSS! <br />
         Уже не терпится
       </p>
     </main>
     <section>
+      <h2>Пройденные уроки</h2>
       <ol>
         <li>Урок 1</li>
         <li>Урок 2</li>
@@ -73,88 +73,87 @@
       </tfoot>
     </table>
     <br />
-    <section>
-      <form>
-        <label for="name">Имя:</label><br /><br />
-        <input
-          id="name"
-          type="text"
-          name="user-name"
-          placeholder="Введите ваше имя"
-          required
-        />
-        <br /><br />
-        <label for="surname">Фамилия:</label><br /><br />
-        <input
-          id="surname"
-          type="text"
-          name="user-surname"
-          placeholder="Введите вашу фамилию"
-          required
-        />
-        <br /><br />
-        <label for="password">Пароль:</label><br /><br />
-        <input
-          id="password"
-          type="password"
-          name="user-password"
-          placeholder="Введите пароль"
-          required
-        />
-        <br /><br />
-        <label for="tel">Телефон:</label><br /><br />
-        <input
-          id="tel"
-          type="tel"
-          name="user-tel"
-          placeholder="Введите телефон"
-        />
-        <br /><br />
-        <label for="gender"><b>Пол</b>:</label><br />
-        <input type="radio" name="user-male" id="male" value="male" required />
-        <label for="male">Мужской</label><br />
-        <input type="radio" name="user-female" id="female" value="female" />
-        <label for="female">Женский</label><br />
-        <br />
-
-        <label for="property"><b>Имущество</b>:</label><br />
-        <input
-          type="checkbox"
-          id="bicycle"
-          name="bicycle"
-          value="bicycle"
-          required
-        />
-        <label for="bicycle">Велик</label><br />
-        <input type="checkbox" id="car" name="car" value="car" />
-        <label for="car">Машина</label><br />
-        <input type="checkbox" id="house" name="house" value="house" disabled />
-        <label for="house">Дом</label>
-        <br /><br />
-        <label for="">Дополнительная информация:</label><br /><br />
-        <textarea
-          name="information"
-          id="information"
-          cols="30"
-          rows="4"
-        ></textarea>
-        <br /><br />
-        <label for="upload-photo">Прикрепить фото:</label><br /><br />
-        <input type="file" />
-        <br /><br />
-        <label for="color">Любимый цвет:</label><br /><br />
-        <input type="color" id="color" /><br /><br />
-        <label for="salary">Хочу ЗП:</label><br /><br />
-        <select name="user-salary" id="salary">
-          <option value="100">100к</option>
-          <option value="150">150к</option>
-          <option value="200">200к</option></select
-        ><br /><br />
-        <img src="/html_mentoring/photo/hqdefault.jpg" alt="" width="150px" />
-        <br /><br />
-        <button type="submit">Отправить</button>
-        <button type="reset">Очистить</button>
-      </form>
-    </section>
+    <form>
+      <label for="name">Имя:</label><br /><br />
+      <input
+        id="name"
+        type="text"
+        name="user-name"
+        placeholder="Введите ваше имя"
+        required
+      />
+      <br /><br />
+      <label for="surname">Фамилия:</label><br /><br />
+      <input
+        id="surname"
+        type="text"
+        name="user-surname"
+        placeholder="Введите вашу фамилию"
+        required
+      />
+      <br /><br />
+      <label for="password">Пароль:</label><br /><br />
+      <input
+        id="password"
+        type="password"
+        name="user-password"
+        placeholder="Введите пароль"
+        required
+      />
+      <br /><br />
+      <label for="tel">Телефон:</label><br /><br />
+      <input
+        id="tel"
+        type="tel"
+        name="user-tel"
+        placeholder="Введите телефон"
+      />
+    </form>
+    <br /><br />
+    <form action="">
+      <fieldset>
+        <legend>Выберите ваш пол:</legend>
+        <p>Пол</p>
+        <label> <input type="radio" id="man" name="gender" />Мужской </label
+        ><br />
+        <label> <input type="radio" id="girl" name="gender" />Женский </label>
+      </fieldset>
+    </form>
+    <br />
+    <form action="">
+      <fieldset>
+        <legend>Выберите имущество:</legend>
+        <p>Имущество</p>
+        <label>
+          <input type="checkbox" id="bicycle" name="property" />Велик </label
+        ><br />
+        <label> <input type="checkbox" id="car" name="property" />Машина </label
+        ><br />
+        <label> <input type="checkbox" id="house" name="property" />Дом </label>
+      </fieldset>
+    </form>
+    <br />
+    <label for="">Дополнительная информация:</label><br /><br />
+    <textarea name="information" id="information" cols="30" rows="4"></textarea>
+    <br /><br />
+    <label for="upload-photo">Прикрепить фото:</label><br /><br />
+    <input type="file" />
+    <br /><br />
+    <label for="color">Любимый цвет:</label><br /><br />
+    <input type="color" id="color" /><br /><br />
+    <label for="salary">Хочу ЗП:</label><br /><br />
+    <select name="user-salary" id="salary">
+      <option value="100">100к</option>
+      <option value="150">150к</option>
+      <option value="200">200к</option></select
+    ><br /><br />
+    <img
+      src="/html_mentoring/photo/hqdefault.jpg"
+      alt="lico_mellstroy"
+      width="150px"
+    />
+    <br /><br />
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
   </body>
 </html>
