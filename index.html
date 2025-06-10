@@ -129,31 +129,41 @@
         ><br />
         <label> <input type="checkbox" id="car" name="property" />Машина </label
         ><br />
-        <label> <input type="checkbox" id="house" name="property" />Дом </label>
+        <label>
+          <input type="checkbox" id="house" name="property" disabled />Дом
+        </label>
       </fieldset>
     </form>
     <br />
-    <label for="">Дополнительная информация:</label><br /><br />
-    <textarea name="information" id="information" cols="30" rows="4"></textarea>
-    <br /><br />
-    <label for="upload-photo">Прикрепить фото:</label><br /><br />
-    <input type="file" />
-    <br /><br />
-    <label for="color">Любимый цвет:</label><br /><br />
-    <input type="color" id="color" /><br /><br />
-    <label for="salary">Хочу ЗП:</label><br /><br />
-    <select name="user-salary" id="salary">
-      <option value="100">100к</option>
-      <option value="150">150к</option>
-      <option value="200">200к</option></select
-    ><br /><br />
-    <img
-      src="/html_mentoring/photo/hqdefault.jpg"
-      alt="lico_mellstroy"
-      width="150px"
-    />
-    <br /><br />
-    <button type="submit">Отправить</button>
-    <button type="reset">Очистить</button>
+    <form action="">
+      <label for="information">Дополнительная информация:</label><br /><br />
+      <textarea
+        name="information"
+        id="information"
+        cols="30"
+        rows="4"
+      ></textarea>
+      <br /><br />
+      <label>Прикрепить фото:<br /><br /><input type="file" /> </label>
+      <br /><br />
+      <label for="color">Любимый цвет:</label><br /><br />
+      <input type="color" id="color" name="color" /><br /><br />
+    </form>
+    <form action="">
+      <label for="salary">Хочу ЗП:</label><br /><br />
+      <select name="user-salary" id="salary">
+        <option value="100">100к</option>
+        <option value="150">150к</option>
+        <option value="200">200к</option></select
+      ><br /><br />
+      <img
+        src="/html_mentoring/photo/hqdefault.jpg"
+        alt="lico_mellstroy"
+        width="150px"
+      />
+      <br /><br />
+      <button type="submit">Отправить</button>
+      <button type="reset">Очистить</button>
+    </form>
   </body>
 </html>
